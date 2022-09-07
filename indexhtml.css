@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Monoton&family=Montserrat:wght@500&family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid {
+    display: grid;
+    grid-template: 
+        "header header" 100px
+        "navbar navbar" auto
+        "sidebar main"
+        "footer footer" 60px/
+           0px auto;
+}
+#header {
+    padding: 10px;
+    grid-area: header;
+    color: #EEEEEE;
+    background-color: rgb(0, 173, 181);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: xx-large;
+}
+#header h1 {
+    cursor: default;
+}
+
+
+
+/* NAV BAR */
+nav{
+    position: sticky; 
+    top: 0px;
+    grid-area: navbar;
+    background-color: rgb(57, 62, 70);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    margin-left: 4rem;
+    text-decoration: none;
+    color: orange;
+    font-size: x-large;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: all 0.7s;
+}
+.registrarsenav {
+    color: #FFF100;
+    margin-left: auto;
+}
+.registrarsenav:hover {
+    background-color: yellow;
+    color:  red;
+}
+nav a:hover{
+    background-color: #8B8888;
+    color: yellow;
+}
+
+
+
+/* MAIN */
+.main {
+    grid-area: main;
+    background-color: rgb(34, 40, 49);
+}
+.mejorgym {
+    color: rgb(196, 185, 185);
+    text-align: center;
+    width: 500px;
+    margin: 120px auto 30px 25px;
+    padding: 10px;
+    background-color: #faf602dc;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.numeros {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+
+}
+.tarjetas {
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 22px;
+    text-align: center;
+    background-color: rgb(43, 72, 101);
+    width: 350px;
+    border-radius: 5px;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.ideal {
+    font-family: 'Monoton', cursive;
+    font-weight: 500;
+    font-size: 8rem;
+    color: #00ADB5;
+}
+.firsttittle{
+    font-family: "Bungee Inline", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+    width: 1100px;
+    margin: 80px 100px;
+
+}
+.firstp {
+    font-family: "Montserrat", sans-serif;
+    margin: 10px auto 25px 100px;
+}
+/* SEGUNDO ARTICULO */
+
+#tituloexplora {
+    color:#00ADB5;
+    margin-top: 200px;
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#art2 {
+    margin: 50px auto 200px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.art__programas {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    background-color: rgba(97, 108, 119, 0.733);
+    width: 340px;
+    height: 300px;
+}
+.art__programas div h2 {
+    font-size: x-large;
+    font-family: "Yeseva One", cursive;
+    font-weight: 400;
+}
+.art__programas div p {
+    margin: 20px auto 60px auto;
+}
+.art__programas:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.404), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.art__programas div a{
+    text-decoration: none;
+    color: yellow;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.art__programas a:hover {
+    text-decoration: underline;
+    background-color: aliceblue;
+    padding: 20px;
+    color: orange;
+    font-family: "ubuntu", sans-serif;
+    font-weight: 500;
+    
+}
+/* TERCER ARTICULO */
+.grid2 {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.281), rgba(211, 211, 211, 0.322) 90%);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.404), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template: 
+    "img1 img1 mitad" 
+    "img2 img3 mitad"/
+     350px 350px auto;
+    margin: auto 50px 200px 50px;
+}
+.img1 {
+    grid-area: img1;
+    background-color: antiquewhite;
+}
+.img2 {
+    grid-area: img2;
+    background-color: #FFB800;
+}
+.img3 {
+    grid-area: img3;
+    background-color: aqua;
+}
+.mitad {
+    grid-area: mitad;
+    padding: 30px 60px;
+    text-align: justify;
+}
+.mitad p{
+    margin-top: 100px;
+    font-family: "Russo one", sans-serif;
+    font-weight: 400;
+    color: orange;
+    font-size: 1rem;
+}
+.mitad h1 {
+    margin-top: 5px ;
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 6rem;
+}
+.mitad h3 {
+    padding: 50px;
+    font-family: "Russo one", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    background-color: rgb(90, 85, 85);
+    display: flex;
+}
+.footer a {
+    text-decoration: none;
+    align-items: center;
+    margin-left: 10px 10px 10px auto;
+    padding: 20px;
+    color: orange;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: all 0.6s;
+}
+.footer a:hover {
+    background-color: orange;
+    color: rgb(90, 85, 85);
+}
+.footer p {
+    margin: 20px 10px auto auto;
+    color: #FFF100;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+
+
+/*RESPONSIVE*/
+@media (max-width: 600px){
+    .grid {
+        grid-template:
+        "header" 80px
+        "navbar" 100px
+        "sidebar" 100px
+        "main" auto
+        "footer" 100px;
+    }
+}

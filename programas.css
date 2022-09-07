@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Monoton&family=Montserrat:wght@500&family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid {
+    display: grid;
+    grid-template: 
+        "header header" 100px
+        "navbar navbar" auto
+        "main main" auto
+        "footer footer" 60px;
+}
+#header {
+    
+    grid-area: header;
+    color: dimgray;
+    background-image: linear-gradient(to bottom, orange, yellow);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+}
+#header h1 {
+    cursor: default;
+}
+
+
+
+/* NAV BAR */
+nav{
+    grid-area: navbar;
+    background-color: rgb(90, 85, 85);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    margin-left: 4rem;
+    text-decoration: none;
+    color: orange;
+    font-size: x-large;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: all 0.7s;
+}
+.registrarsenav {
+    color: #FFF100;
+    margin-left: auto;
+}
+.registrarsenav:hover {
+    background-color: yellow;
+    color:  red;
+}
+nav a:hover{
+    background-color: #8B8888;
+    color: yellow;
+}
+
+
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    background-color: rgb(90, 85, 85);
+    display: flex;
+}
+.footer a {
+    text-decoration: none;
+    align-items: center;
+    margin-left: 10px 10px 10px auto;
+    padding: 20px;
+    color: orange;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: all 0.6s;
+}
+.footer a:hover {
+    background-color: orange;
+    color: rgb(90, 85, 85);
+}
+.footer p {
+    margin: 20px 10px auto auto;
+    color: #FFF100;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* MAIN */
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    gap: 20px;
+}
+.programas {
+    background-color: aquamarine;
+    width: 750px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    flex-direction: column;
+}
+.programas h1 {
+    text-align: center;
+    margin: 20px;
+}
+

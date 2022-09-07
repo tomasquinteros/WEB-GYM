@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(registerpage_image/background-page-register.png);
+}
+.info {
+    padding: 10px;
+}
+header {
+    display: flex;
+    text-align: center;
+    background-color: #fcca02b2;
+    cursor: default;
+    width: 100%;
+    justify-content: center;
+}
+header h1{
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 50px;
+    background-color: rgba(245, 245, 245, 0.329);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.541), 0 6px 20px 0 rgba(0, 0, 0, 0.541);
+    border-radius: 5px;
+}
+.formulario h1, p {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 20px;
+    text-align: center;
+    max-width: 600px;
+}
+.formulario h1 {
+    font-size: 5rem;
+    font-style: italic;
+}
+
+.formulario div{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.formulario div input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.button {
+    transition: all 0.5s;
+}
+.button:hover {
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 20px;
+}
